@@ -37,4 +37,4 @@ next-env.d.ts
 
 
 # venv
-*/backend/venv-env
+backend/venv-env/
