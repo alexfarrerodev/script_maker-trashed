@@ -47,7 +47,7 @@ export default function Layout({
         <header
           style={{
             backgroundColor: "rgba(10, 10, 10, 0.8)", // Color negro con 80% de opacidad
-            padding: "9px",            
+            padding: "12px",
             position: "fixed",
             top: 0,
             left: 0,
@@ -57,10 +57,46 @@ export default function Layout({
             zIndex: 1000, // Put in the first layer
             backdropFilter: "blur(25px)"
           }}
-        > <div className="w-3/5 mx-auto">
-          <h1 style={{ color: "#fff", textAlign: "center" }} className="font-bold">Script maker</h1>
-        </div>
-          
+        > <div className="w-full  p-4">
+            <ul className="flex justify-center items-center space-x-4">
+              <li className="h-full flex items-center">
+                <a
+                  href="/"
+                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="h-full flex items-center">
+                <a
+                  href="#"
+                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li className="h-full flex items-center">
+                <span className="text-white font-bold px-4">ScriptMaker</span>
+              </li>
+              <li className="h-full flex items-center">
+                <a
+                  href="#"
+                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                >
+                  About
+                </a>
+              </li>
+              <li className="h-full flex items-center">
+                <a
+                  href="#"
+                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                >
+                  Start
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </header>
 
         {/* primary container */}
