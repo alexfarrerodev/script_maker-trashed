@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'custom-bg': 'rgba(10, 10, 10, 0.8)', // Añadido el color personalizado
+        'custom-bg': 'rgba(10, 10, 10, 0.8)',  // Añadido el color personalizado
+        'blur':'blur(25px',
       },
     },
   },

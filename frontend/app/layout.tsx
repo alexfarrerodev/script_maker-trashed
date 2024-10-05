@@ -6,6 +6,7 @@ import { metadata } from "./metadata"; // Imports metadata from a new file
 import localFont from "next/font/local";
 import "./globals.css";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -46,8 +47,7 @@ export default function Layout({
         {/* Black bar */}
         <header
           style={{
-            backgroundColor: "rgba(10, 10, 10, 0.8)", // Color negro con 80% de opacidad
-            padding: "12px",
+            backgroundColor: "rgba(10, 10, 10, 0.85)", // Color negro con 80% de opacidad            
             position: "fixed",
             top: 0,
             left: 0,
@@ -55,22 +55,22 @@ export default function Layout({
             transition: "transform 0.3s ease ,  backdrop-filter 0.3s ease",
             transform: isHeaderVisible ? "translateY(0)" : "translateY(-100%)",
             zIndex: 1000, // Put in the first layer
-            backdropFilter: "blur(25px)"
+            backdropFilter: "blur(12px)"
           }}
-        > <div className="w-full  p-4">
+        > <div className=" p-2">
             <ul className="flex justify-center items-center space-x-4">
               <li className="h-full flex items-center">
                 <a
                   href="/"
-                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                  className=" transition transform duration-150 hover:scale-95 text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
                 >
                   Home
                 </a>
               </li>
               <li className="h-full flex items-center">
                 <a
-                  href="#"
-                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                  href="faq"
+                  className="transition transform duration-150 hover:scale-95  text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
                 >
                   FAQ
                 </a>
@@ -80,16 +80,16 @@ export default function Layout({
               </li>
               <li className="h-full flex items-center">
                 <a
-                  href="#"
-                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                  href="about"
+                  className="transition transform duration-150 hover:scale-95 text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
                 >
                   About
                 </a>
               </li>
               <li className="h-full flex items-center">
                 <a
-                  href="#"
-                  className="transition transform duration-150 hover:scale-95 bg-custom-bg text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
+                  href="start"
+                  className="transition transform duration-150 hover:scale-95 text-white hover:bg-white hover:text-black font-medium px-4 py-2 rounded-full"
                 >
                   Start
                 </a>

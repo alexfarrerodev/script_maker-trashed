@@ -8,7 +8,7 @@ export default function Home() {
         </div>
         <p className="text-2xl mt-4 mb-7">Unleash Your Productivity with Script Maker!</p>
         <a
-          href="get-ready"
+          href="start"
           className="bg-white  font-normal text-black text-base rounded-full mt-8 px-7 py-2.5 hover:bg-gray-100 transition duration-200"
           target="_blank"
           rel="noopener noreferrer"
